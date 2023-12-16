@@ -3,6 +3,7 @@ import { Card } from "@repo/ui/card";
 import { Code } from "@repo/ui/code";
 import styles from "./page.module.css";
 import { Button } from "@repo/ui/button";
+import Link from "next/link";
 
 function Gradient({
   conic,
@@ -135,10 +136,11 @@ export default function Page(): JSX.Element {
       <div className={styles.grid}>
         {LINKS.map(({ title, href, description }) => (
           <Card className={styles.card} href={href} key={title} title={title}>
-            {description}
+            {description}kfkfkdkdkdk
           </Card>
         ))}
       </div>
+      <Link href={"service"}>링크</Link>
     </main>
   );
 }
